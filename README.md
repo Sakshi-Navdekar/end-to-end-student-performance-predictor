@@ -1,1 +1,1 @@
-# end-to-end-student-performance-predictor
+# End-to-End-Project: student-performance-predictor
