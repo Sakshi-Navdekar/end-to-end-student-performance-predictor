@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Student Performance Predictor</h2>
+    <form method="post">
+        <label for="hours_studied">Hours Studied:</label>
+        <input type="number" step="0.1" name="hours_studied" required>
+
+        <label for="attendance">Attendance (%):</label>
+        <input type="number" step="0.1" name="attendance" required>
+
+        <button type="submit">Predict Score</button>
+    </form>
+
+    {% if result %}
+    <div class="result">
+        <strong>Predicted Score: {{ result }}</strong>
+    </div>
+    {% endif %}
+</body>
+</html>
